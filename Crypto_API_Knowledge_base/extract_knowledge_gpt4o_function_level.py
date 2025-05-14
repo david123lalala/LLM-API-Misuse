@@ -41,15 +41,13 @@ If the segment has the related API function knowledge, please just output the re
 
 #Output
 The output format will be JSON. You should follow the following format: If the segment has more than one API knowledge, please output more API knowledge.
-[
- API_function_name:'****',
+{API_function_name:'****',
  definition:'*****',
  Parameters:'*****',
  Returns::'*****',
  Throws:'*****',
  Secure_use:'*****',
- Insecure_use:'*******'
-]     
+ Insecure_use:'*******'}    
 
 Notes:
 1.If the segment has the function with same function name and different parameter, please output all functions knowledge.

@@ -1,16 +1,25 @@
 # Our work
 
-Code and result for: Detecting and Repairing Project-Level Misuse of Java Crypto API with Large Language Models
+SmartFix: Detecting and Repairing Project-Level Misuse of Java Cryptography APIs with LLMs
 
 # Abstract
 
-Java crypto application programming interface (API) is critical in ensuring confidentiality, data integrity, authentication, and authorization of software systems. However, crypto API misuse remains a significant challenge due to its complexity. Conventional rule-based approaches employ predefined rules to detect crypto API misuses. Although effective in some cases, this sophisticated method is prone to generating high false positives. In contrast, recent advances in large language models (LLMs) have demonstrated their exceptional capability in code-understanding tasks. Yet, limited attention has been given to addressing crypto API misuse. To bridge this gap, we first conduct a pilot study on the crypto API misuse detection with LLMs in the two Java projects. We identified two major challenges hindering detection performance: insufficient project-level context understanding and limited crypto API knowledge awakening. In response, we propose a novel approach to enhance LLM-based detection and repair of project-level crypto-API misuses. Our comprehensive framework comprises three key components: (1) API knowledge construction, (2) project-level static structural analysis, and (3) LLM-based detection and repair. Extensive experimental results demonstrate that our approach significantly outperforms both rule-based methods and LLM-based baselines regarding detection accuracy, vulnerability localization, and repair effectiveness. The ablation study also highlights the contribution of each framework component, showing substantial improvements in all evaluation metrics. Furthermore, we also identified 10 previously unreported instances of crypto-API misuse in the benchmark. These findings underscore the promising potential of LLMs for the detection and repair of crypto API misuse, paving the way for more reliable and efficient cryptographic practices in software systems.
+Java crypto APIs are essential for ensuring confidentiality, data integrity, authentication, and authorization of software, yet their misuse remains challenging due to inherent complexity and evolving security standards. Traditional rule-based approaches rely on predefined patterns but often suffer from high false positives, whereas LLMs demonstrate strong code understanding but remain underexplored for project-level crypto reliability assurance. To address this, we conduct a pilot study and identify two key challenges: insufficient activation of domain-specific crypto API knowledge and inadequate project-level contextual awareness. In response, we propose SmartFix, a reliability-grounded framework integrating expert-validated API knowledge construction, context-aware static analysis, and iterative self-correction for project-level crypto API misuse detection and repair. Experimental results on the ApacheCryptoAPI-Bench show that SmartFix significantly outperforms state-of-the-art rule-based and LLM-based baselines. Ablation studies confirm the statistical significance of each component’s contribution. Additionally, we report 9 previously unreported crypto API misuses validated via a controlled user study, paving the way for more reliable and efficient crypto practices in software systems.
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> c0ec4ca6621db600e1b0db82e277013f0982b4a0
 
 # Framework
 
-![alt text](framework.png)
+![alt text](framework.pdf)
+
 
 # Result
+
+## Overall Performance
+![alt text](overall_performance.png)
 
 ## Comparison with rule-based approaches
 ![alt text](comparison-1.png)
@@ -18,7 +27,19 @@ Java crypto application programming interface (API) is critical in ensuring conf
 ## Comparison with LLM-based approaches
 ![alt text](comparison-2.png)
 
+## Ablation Study
+![alt text](ablation_study.png)
+
 
 # Code
 
+<<<<<<< HEAD
+CryptoAPI_Agent.py
+Crypto_API_Knowledge_base/extract_knowledge.py  
+extract_call_chain.py
+extract_code_slice.py
+judge_API.py
+pre_baseline.py
+=======
 Comming soon .....
+>>>>>>> c0ec4ca6621db600e1b0db82e277013f0982b4a0

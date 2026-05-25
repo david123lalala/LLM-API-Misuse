@@ -1,6 +1,6 @@
 # Our work
 
-Code and result for: Detecting and Repairing Project-Level Misuse of Java Crypto API with Large Language Models
+SmartFix: Detecting and Repairing Project-Level Misuse of Java Cryptography APIs with LLMs
 
 # Abstract
 
